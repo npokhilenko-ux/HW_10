@@ -1,0 +1,25 @@
+    1  git config --global user.name Natalia_Pokhylenko
+    2  git config --global user.email n.pokhilenko@gmail.com
+    3  git clone https://github.com/npokhilenko-ux/HW_10.git
+    4  cd HW_10
+    5  touch text_ignore.txt
+    6  nano text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .
+   10  git commit -m "new1"
+   11  touch main_test.txt
+   12  git add .
+   13  git commit -m "new2"
+   14  git checkout -b develop
+   15  touch develop_test.txt
+   16  git add .
+   17  git commit -m "new3"
+   18  nano develop_test.txt
+   19  git status
+   20  git add .
+   21  git commit -m "new4"
+   22  git checkout main
+   23  git merge develop
+   24  git log
+   25  history > command_list.csv
